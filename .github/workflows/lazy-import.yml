@@ -18,14 +18,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v7
         with:
           python-version: "3.13"
-
-      - name: Set up uv
-        uses: astral-sh/setup-uv@v5
-
+          enable-cache: true
+          cache-dependency-glob: |
+            pyproject.toml
+            uv.lock
+            requirements*.txt
       - name: Create virtual environment
         run: uv venv
 
