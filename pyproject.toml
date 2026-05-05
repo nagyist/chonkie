@@ -8,7 +8,7 @@ name = "chonkie"
 version = "1.6.4"
 description = "🦛 CHONK your texts with Chonkie ✨ - The no-nonsense chunking library"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 license = { file = "LICENSE" }
 keywords = [
     "chunking",
@@ -51,7 +51,7 @@ dependencies = [
     "chonkie-core>=0.8.0",
     "tenacity>=8.0.0",
     "httpx>=0.28.1",
-    "tokie>=0.0.8",
+    "tokie>=0.0.9",
 ]
 
 [project.urls]
